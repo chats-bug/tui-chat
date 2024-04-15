@@ -23,3 +23,12 @@ To ensure our projects consistently reflect our high standards, we encourage you
 
 - Return only the CSS code.
 - Do not include anything else in your response, since the response will be used directly without any modifications.
+- Example CSS for a date picker:
+```css
+    /* Example CSS for a date picker */
+    #colorPickerContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+```

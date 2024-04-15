@@ -28,5 +28,35 @@ As our esteemed HTML Web Developer, we have brought you on board to spearhead th
 
 ## **Response Guidelines:**
 
-- Return only the HTML code.
+- Return only the HTML code in markdown format
 - Do not include anything else in your response, since the response will be used directly without any modifications.
+- Example:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Website Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Section Title</h2>
+            <p>Section Content</p>
+        </section>
+    </main>
+</body>
+</html>
+```

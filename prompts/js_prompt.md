@@ -27,3 +27,11 @@ Your reputation for writing well-documented, clean, and highly efficient code pr
 
 - Return only the JavaScript code.
 - Do not include anything else in your response, since the response will be used directly without any modifications.
+- Example javascript code:
+```js
+// Example JavaScript code
+function submitColor() {
+  const color = document.getElementById('backgroundColor').value;
+  document.body.style.backgroundColor = color;
+}
+```
