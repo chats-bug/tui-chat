@@ -1,0 +1,23 @@
+{
+    
+    
+    "GraphicsDesigner": [
+            {
+                "skill_id" : "1",
+                "skill":"Prepare a design",
+                "questions":["What is the email",
+                            "What is the segment",
+                            "What is the content"]
+            },
+            {
+                "skill_id" : "2",
+                "skill":"Design Tshirt",
+                "questions":["What is the design",
+                            "What is thhe size",
+                            "What is the colour"]
+            }  
+        ]
+        
+    
+  
+}

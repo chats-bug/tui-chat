@@ -1,0 +1,10 @@
+[
+  {
+    "tool": "gmail",
+    "integration_status": "success"
+  },
+  {
+    "tool": "slack",
+    "integration_status": "success"
+  }
+]

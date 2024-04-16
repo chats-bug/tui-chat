@@ -1,0 +1,75 @@
+{
+  "HR": {
+    "skills": [
+      "preparation of Job Description",
+      "Search for linkedin profiles based on a criterion",
+      "book interviews for roles",
+      "Resume shortlisting",
+      "Job Posting on LinkedIn",
+      "set up  calls with candidates",
+      "set up training for the employees"
+    ]
+  },
+  "GraphicsDesigner": {
+    "skills": [
+      "Create creatives for Instagram, Facebook, LinkedIn, WhatsApp and Twitter",
+      "Create thumbnails for Youtube",
+      "Create T-Shirt design",
+
+      "Create blog graphic",
+      "Create graphic for email",
+      "Create flyer",
+      "Create ad creatives",
+      "Create Infographics",
+      "Create Bookcover",
+      "Design presentation deck",
+      "Remove background from images",
+      "Create collage photos",
+      "Image editing according to requirements",
+      "Creat brochure",
+      "Website landing page design",
+      "Poster design",
+      "Event invitation design",
+      "Menu design",
+      "Package design",
+      "Product catalogue",
+      "design a logo",
+      "Sticker Design",
+      "Stationary design",
+      "Design Canva Template"
+    ]
+  },
+  "Marketer": {
+    "skills": [
+      "Sending email campaign using csv format",
+      "Sending sms campaign using csv format",
+      "writing marketting copy",
+      "Running facebook ads",
+      "Running google ads",
+      "Writing blogs on the given topics related to marketting only"
+    ]
+  },
+  "SDR": {
+    "skills": [
+      "You can prospect stores and companies based on the requirements",
+      "You can prospect leads based on the ideal customer profile or business requirements",
+      "You will include tools and applications that user wants the comapnies must be using.",
+      "You will help user find the email and contact details of People for prospecting."
+    ]
+  },
+  "EA": {
+    "skills": [
+      "create google calendar events",
+      "analyze google calendar events",
+      "reschedule google calendar events",
+      "Delete google calendar events",
+      "Edit google calendar events",
+      "Draft emails based on given information",
+      "Read google calendar events",
+      "Organize and modify meetings only on Google"
+    ]
+  },
+  "MR": {
+    "skills": ["Perform any market research"]
+  }
+}

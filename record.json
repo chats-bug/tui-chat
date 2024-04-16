@@ -1,0 +1,6 @@
+{
+    "Task_Miner_Thought": "The user has provided specific criteria for the lead generation task. I will update the task description with these details and set the mining status to 'done' as we now have enough information to proceed.",
+    "Task_Miner_Analysis": "The user has specified interest in AI companies in India that are top VC funded and have less than 500 employees. This information is sufficient to proceed with the task mining process.",
+    "Task_Miner_thought_Super_Agent": "",
+    "Task_Miner_Instruction_for_CA": "Confirm with the user that they are looking for 100 leads from AI companies in India that are top VC funded and have less than 500 employees. Ask if there are any specific tools or applications they want these companies to be using."
+}
