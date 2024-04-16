@@ -35,7 +35,7 @@ Most of the time you would be using HTML forms, so execute while keeping the fol
 Always respond in the following format:
 ```json
 {
-  "thoughts": "Your thoughts on the task",
+  "thoughts": "Your thoughts on the task (justify if a UI is really required or not)",
   "ui_required": "boolean (true/false)",
   "html_structure": "HTML structure here, like the whole structure including a form, labels inputs submit if required",
   "components": ["Component description here (Always include `class` and `id` if required)", "Another component description here (Always include `class` and `id` if required)"],
@@ -45,4 +45,7 @@ Always respond in the following format:
 
 ## **Final Instructions:**
 - Ensure that the UI components are designed to be user-friendly and visually appealing.
+- A UI is ONLY REQUIRED in the following cases:
+  - When the assistant is asking the user for some information that can be better presented in a UI. If it is something trivial like 'What is your name?', a UI is not required.
+  - When the assistant is presenting the user with some data that can be better presented in a UI. For example, a list of options, a calendar, etc. If it is a simple response like 'The weather today is sunny' or a short essay, a UI is not required.
 - DO NOT return '```json' or '```' in your response.

@@ -4,9 +4,11 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 import uuid
 
-from app.ui_gen import ui_gen
+from app.ui_gen import ui_gen, TuiGenResponse
 from run import call_gpt
 from llm import OpenAiModel, OpenAiChatModels
+from MASProd.main import chat_serve
+
 
 
 # Load the environment variables
@@ -53,5 +55,27 @@ async def tui_gen(request: Request):
 
     return ui_gen(r_uuid, text)
 
+
+@app.post("/tui/chat")
+async def tui_chat(request: Request):
+    # get the prompt from the request body
+    try:
+        req_body = await request.json()
+        text = req_body["text"]
+    except:
+        print("Invalid request", request)
+        raise HTTPException(status_code=400, detail="Invalid Request body")
+
+    chat_response_from_mas = await chat_serve(user_prompt=text)
+    r_uuid = uuid.uuid4()
+    formatted_chat = f"""User: {text}
+    Assistant: {chat_response_from_mas}"""
+    tui_gen_response: TuiGenResponse = ui_gen(r_uuid, formatted_chat)
+    return {
+        "chat_response": chat_response_from_mas,
+        "tui_gen_response": tui_gen_response
+    }
+
+
 # Run the server
-# uvicorn local_fast_gpt:app --reload
+# uvicorn server:app --reload

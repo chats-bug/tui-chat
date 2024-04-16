@@ -164,3 +164,7 @@ cython_debug/
 #  Logs which are nested in directories should be ignored.
 #  Example MAS/logs/ should be ignored.
 **/logs/
+
+
+# Ignore outputs
+outputs/
