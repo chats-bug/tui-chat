@@ -6,7 +6,7 @@ from pydantic import BaseModel, model_validator
 class MainResponse(BaseModel):
     thoughts: str
     ui_required: bool
-    html_structure: str
+    # html_structure: str
     components: Optional[List[str]]
     functionality: Optional[List[str]]
 
@@ -24,11 +24,12 @@ class HTMLResponse(BaseModel):
         :return: The parsed HTML content.
         """
         # strip ```html and ```
+        self.validate_html({"raw_markdown": self.raw_markdown})
         return self.raw_markdown[7:-3]
 
     # write a pydantic validator to check if the raw_markdown is a valid HTML content
     # if not valid, do not allow creation of the object
-    @model_validator(mode='before')
+    # @model_validator(mode='before')
     @classmethod
     def validate_html(cls, v):
         # check if the raw_markdown is a valid HTML content
@@ -39,11 +40,11 @@ class HTMLResponse(BaseModel):
 
 
 class CSSResponse(BaseModel):
-    raw_css: str
+    raw_markdown: str
 
     @property
     def raw(self) -> str:
-        return self.raw_css
+        return self.raw_markdown
 
     @property
     def get_css(self) -> str:
@@ -51,11 +52,12 @@ class CSSResponse(BaseModel):
         :return: The parsed CSS content.
         """
         # strip ```css and ```
-        return self.raw_css[6:-3]
+        self.validate_css({"raw_css": self.raw_markdown})
+        return self.raw_markdown[6:-3]
 
     # write a pydantic validator to check if the raw_css is a valid CSS content
     # if not valid, do not allow creation of the object
-    @model_validator(mode='before')
+    # @model_validator(mode='before')
     @classmethod
     def validate_css(cls, v):
         # check if the raw_css is a valid CSS content
@@ -66,11 +68,11 @@ class CSSResponse(BaseModel):
 
 
 class JSResponse(BaseModel):
-    raw_js: str
+    raw_markdown: str
 
     @property
     def raw(self) -> str:
-        return self.raw_js
+        return self.raw_markdown
 
     @property
     def get_js(self) -> str:
@@ -78,11 +80,12 @@ class JSResponse(BaseModel):
         :return: The parsed JS content.
         """
         # strip ```js and ```
-        return self.raw_js[5:-3]
+        self.validate_js({"raw_js": self.raw_markdown})
+        return self.raw_markdown[5:-3]
 
     # write a pydantic validator to check if the raw_js is a valid JS content
     # if not valid, do not allow creation of the object
-    @model_validator(mode='before')
+    # @model_validator(mode='before')
     @classmethod
     def validate_js(cls, v):
         # check if the raw_js is a valid JS content

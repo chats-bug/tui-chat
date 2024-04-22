@@ -1,0 +1,32 @@
+{
+    "messages": [
+        "User: Hi",
+        
+        "Bot: Hello Mark, how can I help you today?",
+
+        "User: Do I have anything in my emails?",
+        
+        "Bot: Yes, here is a list of your emails:\n[\n    {\n        \"subject\": \"Meeting Reminder\",\n        \"from\": \"sarah@office.com\",\n        \"date_time\": \"2022-01-02 09:00:00\",\n        \"summary\": \"Don't forget our meeting scheduled for tomorrow at 10am regarding the new project.\"\n    },\n    {\n        \"subject\": \"Quarterly Sales Report\",\n        \"from\": \"michael@sales.com\",\n        \"date_time\": \"2022-01-03 15:30:00\",\n        \"summary\": \"The quarterly sales report is ready for review. Please see the attached document for detailed figures and analysis.\"\n    },\n    {\n        \"subject\": \"Happy Birthday!\",\n        \"from\": \"team@workplace.com\",\n        \"date_time\": \"2022-01-04 08:00:00\",\n        \"summary\": \"Wishing you a day filled with happiness and a year filled with joy. Happy birthday from all of us!\"\n    },\n    {\n        \"subject\": \"Policy Update\",\n        \"from\": \"hr@company.com\",\n        \"date_time\": \"2022-01-05 14:20:00\",\n        \"summary\": \"Please be advised of the updated policies regarding remote work. All employees are requested to review the changes by the end of this week.\"\n    },\n    {\n        \"subject\": \"Your Subscription Renewal\",\n        \"from\": \"no-reply@service.com\",\n        \"date_time\": \"2022-01-06 07:45:00\",\n        \"summary\": \"This is a reminder that your subscription will be automatically renewed on January 15th. Please ensure your billing information is up to date.\"\n    }\n]\n",
+
+        "User: Oh, Sarah mailed about the meeting. Could you gather a bit more info about her?",
+        
+        "Bot: Sure. I found this about Sarah on the internet: {\n    \"name\": \"Sarah Johnson\",\n    \"company\": \"Google\",\n    \"division\": \"Mobile Ads\",\n    \"position\": \"Senior Account Manager\",\n    \"location\": \"Mountain View, CA\",\n    \"email\": \"sarah.johnson@google.com\",\n    \"phone_number\": \"+1-650-253-0000\",\n    \"linkedin_url\": \"https://www.linkedin.com/in/sarahjohnsongoogle\",\n    \"lead_status\": \"warm\",\n    \"background\": \"Sarah has over 10 years of experience in digital marketing and advertising, with a focus on mobile ad solutions. Since joining Google 5 years ago, she has significantly contributed to developing innovative ad formats and strategies that have helped countless clients improve their mobile ad presence and ROI. Sarah holds a B.A. in Marketing from the University of California, Berkeley, and an M.B.A. from Stanford University Graduate School of Business.\",\n    \"interests\": [\"Digital Marketing\", \"Mobile Technology\", \"Travel\", \"Running\"],\n    \"notes\": \"Met Sarah at the Mobile Marketing Conference 2022 in San Francisco. Expressed interest in our product for enhancing Google's mobile ad targeting capabilities. Follow-up scheduled for next week.\"\n}\n",
+        
+        "User: She looks like she can be a lead. Can you add her to the CRM?",
+        
+        "Bot: Sure, please add the following details: Name (Sarah Johnson), Company (Google), Lead Status (Warm), Contact (phone no: 1-650-253-0000, email: sarah. johnson@google.com), Additional Links ([https://www.linkedin.com/in/sarahjohnsongoogle]), notes: [\"has over 10 years of experience in digital marketing and advertising, with a focus on mobile ad solutions.\", ...]",
+        
+        "User: Form details",
+        
+        "Bot: Sarah Johnson has been successfully added to the CRM as a lead. Also do you want to setup a meeting with her?",
+        
+        "User: Yes, That would be perfect. You can set it up in the next week.",
+        
+        "Bot: Alright. During the next week these are your free slots:\n{\n    \"Monday\": [\"09:00 - 11:00\", \"13:30 - 15:30\", \"16:00 - 18:00\"],\n    \"Tuesday\": [\"10:00 - 12:00\", \"14:30 - 16:30\"],\n    \"Wednesday\": [\"08:00 - 10:00\", \"11:30 - 13:30\", \"15:00 - 17:00\"],\n    \"Thursday\": [\"09:30 - 11:30\", \"13:00 - 15:00\", \"16:30 - 18:30\"],\n    \"Friday\": [\"08:30 - 10:30\", \"12:00 - 14:00\", \"15:30 - 17:30\"]\n}.\nAlso could you please provide the following details: Agenda for the meeting, Invitees (including Sarah Johnson), duration any additional notes.\n",
+        
+        "User: Form Details",
+        
+        "Bot: Your meeting with Sarah has been set for Tuesday from 10:00 - 11:00. The agenda is to discuss potential collaboration opportunities between your companies. You also invited Jason, and both of them have been sent an invite."
+    ],
+    "idx": 1
+}

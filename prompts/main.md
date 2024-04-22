@@ -37,11 +37,14 @@ Always respond in the following format:
 {
   "thoughts": "Your thoughts on the task (justify if a UI is really required or not)",
   "ui_required": "boolean (true/false)",
-  "html_structure": "HTML structure here, like the whole structure including a form, labels inputs submit if required",
   "components": ["Component description here (Always include `class` and `id` if required)", "Another component description here (Always include `class` and `id` if required)"],
   "functionality": ["JavaScript functionality description here (Always include a function name and signature)", "Another functionality description here (Always include a function name and signature)"]
 }
 ```
+
+## **Functionality**
+- **Data Visualization**: If only data visualization is required, it would be better to refrain from adding extra functionality like some form of interaction. It would be better to keep it simple and easy to understand.
+- **Form Elements**: If the UI component involves form elements, functionality is crucial. Like checking for valid input, handling form submission, etc.
 
 ## **Final Instructions:**
 - Ensure that the UI components are designed to be user-friendly and visually appealing.

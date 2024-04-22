@@ -14,7 +14,7 @@ class ModelType(Enum):
 class OpenAiChatModels(Enum):
     GPT_4 = "gpt-4"
     GPT_4_32K = "gpt-4-32k"
-    GPT_4_TURBO = "gpt-4-turbo-preview"
+    GPT_4_TURBO_PREVIEW = "gpt-4-turbo-preview"
     GPT_4_TURBO_1106_PREVIEW = "gpt-4-1106-preview"
 
     GPT_4_VISION_PREVIEW = "gpt-4-vision-preview"
